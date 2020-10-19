@@ -1,6 +1,7 @@
 import java.util.*;
 
-/*
+/*This program counts the amount of times a name has popped up.
+ * Then it outputs all the names and the number of times it is printed.
  * Created By: Robert Johns Jr.
  */
 public class nameCounts {
