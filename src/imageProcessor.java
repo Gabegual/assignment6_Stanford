@@ -1,13 +1,10 @@
 import acm.graphics.GImage;
+
 import acm.program.*;
 
-/*This program grabs an image from the file explorer.
- * After that it flips the image horizontally and prints it.
- * Created by: Robert Johns
- */
 public class imageProcessor extends GraphicsProgram {
 	public void run() {
-		GImage image = new GImage("C:\\MeritAmerica\\Java\\Section_Assignment6\\Vermeer_Milkmaid.jpg");
+		GImage image = new GImage("C:\\MeritAmerica\\Java\\Section_Assignment6\\download.jpg");
 		add(image);
 		GImage newImage = flipHorizontal(image);
 		add(newImage);

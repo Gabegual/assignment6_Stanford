@@ -1,27 +1,24 @@
 import java.util.*;
 
-/*This program counts the amount of times a name has popped up.
- * Then it outputs all the names and the number of times it is printed.
- * Created By: Robert Johns Jr.
- */
+
 public class nameCounts {
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
+		Scanner Names = new Scanner(System.in);
 		HashMap<String, Integer> nameCount = new HashMap<String, Integer>();
 
 		while (true) {
 			System.out.print("Input name: ");
-			String n = s.nextLine();
-			if (n.equals("")) {
+			String A = Names.nextLine();
+			if (A.equals("")) {
 				break;
-			} else if (!nameCount.containsKey(n)) {
-				nameCount.put(n, 1);
+			} else if (!nameCount.containsKey(A)) {
+				nameCount.put(A, 1);
 			} else {
-				if (nameCount.containsKey(n)) {
-					Integer c = new Integer(nameCount.get(n));
+				if (nameCount.containsKey(A)) {
+					Integer c = new Integer(nameCount.get(A));
 					c++;
-					nameCount.remove(n);
-					nameCount.put(n,c);
+					nameCount.remove(A);
+					nameCount.put(A,c);
 				}
 			}
 		}
